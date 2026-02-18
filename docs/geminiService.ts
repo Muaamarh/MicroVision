@@ -1,7 +1,16 @@
 
 import { GoogleGenAI, Type, GenerateContentResponse, Modality } from "@google/genai";
 
-const getAI = () => new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+// دالة آمنة للحصول على مفتاح API
+const getApiKey = () => {
+    try {
+        return (window as any).process?.env?.API_KEY || "";
+    } catch (e) {
+        return "";
+    }
+};
+
+const getAI = () => new GoogleGenAI({ apiKey: getApiKey() });
 
 export const medicalChat = async (message: string, history: any[] = []) => {
   const ai = getAI();
