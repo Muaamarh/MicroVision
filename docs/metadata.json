@@ -1,0 +1,9 @@
+
+{
+  "name": "MicroVision AI - Smart Lab System",
+  "description": "An advanced medical laboratory assistant powered by Gemini AI for analyzing slides, answering medical queries, and real-time voice consultations.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
