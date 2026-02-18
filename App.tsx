@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import { UserInfo } from './types';
-import Login from './components/Login';
-import Dashboard from './components/Dashboard';
+import { UserInfo } from './types.ts';
+import Login from './components/Login.tsx';
+import Dashboard from './components/Dashboard.tsx';
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

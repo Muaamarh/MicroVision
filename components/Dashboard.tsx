@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
-import { UserInfo, Message, AppMode, LiveSubMode } from '../types';
-import { medicalChat, analyzeMedia, textToSpeech, decodeAudio, decodeAudioData } from '../geminiService';
-import Sidebar from './Sidebar';
-import ChatWindow from './ChatWindow';
-import LiveSession from './LiveSession';
+import { UserInfo, Message, AppMode, LiveSubMode } from '../types.ts';
+import { medicalChat, analyzeMedia, textToSpeech, decodeAudio, decodeAudioData } from '../geminiService.ts';
+import Sidebar from './Sidebar.tsx';
+import ChatWindow from './ChatWindow.tsx';
+import LiveSession from './LiveSession.tsx';
 
 interface DashboardProps {
   userInfo: UserInfo;
